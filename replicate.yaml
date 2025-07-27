@@ -1,0 +1,17 @@
+build:
+  gpu: true
+  python_version: "3.11"
+  system_packages:
+    - "cmake"
+  python_packages:
+    - "torch"
+    - "torchvision"
+    - "torchaudio"
+    - "diffusers @ git+https://github.com/huggingface/diffusers@3d2f8ae99b88c50a340dd879ec7f44981ffd12fe"
+    - "transformers"
+    - "accelerate"
+    - "peft"
+    - "sentencepiece"
+    - "protobuf"
+
+predict: "predict.py:Predictor"
